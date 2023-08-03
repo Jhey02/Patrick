@@ -15,7 +15,7 @@
 }
 
 .MainFoto{
-    width: 700px;
+    width: 600px;
     height: 450px;
     object-fit: cover;
     object-position: center;
@@ -23,8 +23,9 @@
  }
 
 .fotoM{
-    width: 100%;
+    width: 90%;
     height: 100%;
+   
 }
 
 
@@ -50,23 +51,34 @@ img {
 
 @media screen and (max-width: 767px) {
     .container {
-      flex-direction: column; /* Cambia la dirección a vertical */
-      background-size: auto; /* Cambia el tamaño del fondo a su tamaño original */
+      flex-direction: column; 
+      background-size: auto; 
     }
   
     .MainFoto {
-      width: 90%; /* Hace que la imagen principal ocupe todo el ancho */
-      height: 450px; /* Mantiene la proporción del tamaño original */
-      margin-bottom: 10px; /* Disminuye el margen para separación */
+      width: 100%; 
+      height: 450px;
+      
     }
   
     .ImgCarosel {
-      flex-direction: row; /* Cambia el carrusel a una disposición horizontal */
+      display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Dos columnas de tamaño igual */
+  grid-template-rows: repeat(3, 1fr); /* Dos filas de tamaño igual */
+  gap: 2px;
     }
   
     .carrosel {
-      width: 100px; /* Restaura el ancho original de las imágenes del carrusel */
-      height: 100px; /* Restaura la altura original de las imágenes del carrusel */
-      margin-bottom: 0; /* Vuelve al margen original para separación */
+      width: 100px; 
+      height: 100px; 
+      margin-bottom: 0; 
     }
+    .carrosel:hover{
+      width: 90px;
+      height: 90px;
+      border: 2px solid white;
   }
+    
+  }
+
+  

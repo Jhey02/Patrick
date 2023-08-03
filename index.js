@@ -1,5 +1,5 @@
 const carroselImages = document.querySelectorAll(".carrosel");
-
+const fotoM = document.getElementById('MainFoto')
 
 carroselImages.forEach((image) => {
     image.addEventListener("click", () => {
@@ -11,5 +11,7 @@ carroselImages.forEach((image) => {
 
         // Cambiar el src de la imagen principal por el de la imagen clickeada
         mainFoto.setAttribute("src", newMainFotoSrc);
+        
     });
 });
+
